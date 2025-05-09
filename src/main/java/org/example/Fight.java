@@ -19,7 +19,7 @@ public final class Fight implements Action {
     @Override public void execute() {
         Monster m = door.getEnemy();
         Character p = dungeon.getPlayer();
-
+        /** decides how the fight wll be if it's either a strenght based one or craft based one*/
         boolean useStr = m.usesStrength();
         System.out.println("\n Let's Fight! " + m.getName() + " (" +
                 (useStr ? "STR" : "CRF") + ")");
